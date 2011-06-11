@@ -8,9 +8,9 @@
   </head>
   <body>
 
-    <div  data-role="page" id="home"> 
-      <div  data-role="header">
-	<img id="logo" src="images/logo-320.png"/>
+    <div data-role="page" id="home"> 
+      <div data-role="header">
+	<img alt="Instagrub" id="logo" src="images/logo-320.png"/>
       </div> 
       <div  data-role="content">
 	<ul data-role="listview"> 
@@ -22,15 +22,15 @@
 	  <li>Portage Bay Cafe & Catering</li>
 	</ul>
       </div> 
-      <div  data-role="footer">
+      <div data-role="footer">
       </div> 
     </div> 
 
-    <div  data-role="page" id="specials"> 
-      <div  data-role="header">
-	Dahlia Workshop
+    <div data-role="page" id="specials"> 
+      <div data-role="header">
+	<h1>Dahlia Workshop Specials</h1>
       </div> 
-      <div  data-role="content">
+      <div data-role="content">
 	<ul data-role="listview"> 
 	  <li>
 	    <a href="#order">
@@ -48,26 +48,18 @@
 	  </li>
 	</ul>
       </div> 
-      <div  data-role="footer">
-      </div> 
     </div> 
 
 
-    <div  data-role="page" id="order"> 
-      <div  data-role="header">
-	Special1
+    <div data-role="page" id="order"> 
+      <div data-role="header">
+	<h1>Order Special1</h1>
       </div> 
       <div  data-role="content">
-	<h1>Order Special1</h1>
-
-	<li>
-	  <img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
-	  
-	  Special1
-	</li>
+	<h2>Special1</h2>
+	<img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
 
 	<form>
-
 	  <label for="">Credit Card Type</label>
 	  <input type="text" name=""/>
 
@@ -81,15 +73,27 @@
 	  <input type="text" name=""/>
 	</form>
 
-	<a href="order-complete.html">Place Order</a>
+	<a href="#order-complete">Place Order</a>
 
-      </div> 
-      <div  data-role="footer">
       </div> 
     </div> 
 
+    <div data-role="page" id="order-complete"> 
+      <div data-role="header">
+	<h1>Order Complete</h1>
+      </div> 
+      <div  data-role="content">
+	<h2>Special1</h2>
+	
+	<img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
+	   
+	<p>Mark as Favorite</p>
+	<p>Share with Friends</p>
 
-    <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+      </div> 
+    </div> 
+
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
     
     <script src="js/app.js">
