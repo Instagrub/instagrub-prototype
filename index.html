@@ -11,7 +11,9 @@
 
     <div  data-role="page" id="home"> 
       <div  data-role="header">
-	<img id="logo" src="images/logo-sm-negate.png"/>
+	<a href="">
+	  <img id="logo" src="images/logo-sm-negate.png"/>
+	</a>
       </div> 
       <div  data-role="content">
 	<ul data-role="listview"> 
@@ -24,8 +26,6 @@
 	</ul>
       </div> 
       <div  data-role="footer">
-	<a href="http://twitter.com/instagrub"
-	   class="twitter-follow-button">Follow @instagrub</a><br/> 
       </div> 
     </div> 
 
@@ -38,16 +38,16 @@
 	  <li>
 	    <a href="#order">
 	      <img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
-	      Food1
+	      Special1
 	    </a>
 	  </li>
 	  <li>
 	    <img src="images/specials-mock/5787838693_fd53226742_t.jpg"/>
-	    Food2
+	    Special2
 	  </li>
 	  <li>
 	    <img src="images/specials-mock/5787845813_a88f2bb95c_t.jpg"/>
-	    Food3
+	    Special3
 	  </li>
 	</ul>
       </div> 
@@ -61,12 +61,31 @@
 	Special1
       </div> 
       <div  data-role="content">
-	<ul data-role="listview"> 
-	  <li>
-	    <img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
-	    Special1
-	  </li>
-	</ul>
+	<h1>Order Special1</h1>
+
+	<li>
+	  <img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
+	  
+	  Special1
+	</li>
+
+	<form>
+
+	  <label for="">Credit Card Type</label>
+	  <input type="text" name=""/>
+
+	  <label for="">Credit Card Number</label>
+	  <input type="text" name=""/>
+
+	  <label for="">Expiration</label>
+	  <input type="text" name=""/>
+
+	  <label for="">Security Code</label>
+	  <input type="text" name=""/>
+	</form>
+
+	<a href="order-complete.html">Place Order</a>
+
       </div> 
       <div  data-role="footer">
       </div> 
@@ -75,7 +94,7 @@
 
     <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
-
+    
     <script src="js/app.js">
 
     </script>
