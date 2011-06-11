@@ -1,7 +1,7 @@
 
 	function showPosition(position) {  
 	// Did we get the position correctly?
-	window.alert (position.coords.latitude);		 		 
+	console.log (position.coords.latitude);		 		 
 	}
 
 	function handleError(error) {
