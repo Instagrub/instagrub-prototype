@@ -16,7 +16,7 @@
 
 		var terms = 'restaurants';
 		var ll = position.coords.latitude + ',' + position.coords.longitude;
-		var limit = '10';
+		var limit = '6';
 		
 		var accessor = {
 		  consumerSecret: auth.consumerSecret,
@@ -59,7 +59,12 @@
     }
 	
 	function getYelpResults(data, textStats, XMLHttpRequest) {
-		var restaurantDetails = data.businesses[0].id;
+		
+		for (var i=0; i < data.businesses.length; i++)
+		{
+			$("#rlist ul").append('<li><a href="#specials">' + data.businesses[i].name + '</a></li>');			
+		}
+		$.getScript('http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js');
 	}
 		  
 	(function () {
