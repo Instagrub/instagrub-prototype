@@ -4,74 +4,66 @@
     <title>Instagrub</title>
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="http://wal.sh/static/home.css" /> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
   </head>
   <body>
 
-    <div id="fb-root"></div>
+
+    <div  data-role="page" id="home"> 
+      <div  data-role="header">
+	<img id="logo" src="images/logo-sm.png"/>
+      </div> 
+      <div  data-role="content">
+	<ul data-role="listview"> 
+	  <li><a href="#specials">Dahlia Workshop</a></li>
+	  <li>re:public</li>
+	  <li>Brave Horse Tavern</li>
+	  <li>Serious Pie</li>
+	  <li>Jimmy John's</li>
+	  <li>Portage Bay Cafe & Catering</li>
+	</ul>
+      </div> 
+      <div  data-role="footer">
+	(c)2011
+      </div> 
+    </div> 
+
+    <div  data-role="page" id="specials"> 
+      <div  data-role="header">
+	<img id="logo" src="images/logo-sm.png"/>
+      </div> 
+      <div  data-role="content">
+	<ul data-role="listview"> 
+	  <li>
+	    <img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
+	    Food1
+	  </li>
+	  <li>
+	    <img src="images/specials-mock/5787838693_fd53226742_t.jpg"/>
+	    Food2
+	  </li>
+	  <li>
+	    <img src="images/specials-mock/5787845813_a88f2bb95c_t.jpg"/>
+	    Food3
+	  </li>
+	</ul>
+      </div> 
+      <div  data-role="footer">
+      </div> 
+    </div> 
 
 
-    <img id="logo" src="images/logo.png"/>
 
+    <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
 
-    <a href="http://twitter.com/instagrub"
-       class="twitter-follow-button">Follow @instagrub</a><br/> 
-
-    <fb:like href="http://www.facebook.com/pages/Instagrub/178859512172831"
-	     send="true"
-	     width="450"
-	     show_faces="true"
-	     font=""></fb:like>
-
-    <h2>Location</h2>
-
-    <ul>
-      <li>terry and denny, seattle</li>
-    </ul>
-
-    <h2>Businesses</h2>
-
-    <ol>
-      <li>Dahlia Workshop</li>
-      <li>re:public</li>
-      <li>Brave Horse Tavern</li>
-      <li>Serious Pie</li>
-      <li>Jimmy John's</li>
-      <li>Portage Bay Cafe & Catering</li>
-    </ol>
-
-
-    <h2>Specials</h2>
-
-    <ul id="specials-mock-list">
-      <li><img src="images/specials-mock/5787801267_bc8f390fbf_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787802739_e1413547dc_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787803871_d0e2e00637_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787806689_87b0e47a8e_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787806829_f297833cdd_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787807089_fa3a7afef2_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787807225_d3ceb921bd_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787808223_db9758ffd2_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787818627_c16400061b_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787818835_ab004224ec_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787819811_500db81568_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787819897_37347a68be_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787820231_897373a423_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787838693_fd53226742_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787845813_a88f2bb95c_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787895987_e925ea97bf_t.jpg" /></li>
-      <li><img src="images/specials-mock/5787902291_aacbdc6c79_t.jpg" /></li>
-      <li><img src="images/specials-mock/5788356086_f63d16910a_t.jpg" /></li>
-      <li><img src="images/specials-mock/5788362376_559f90146f_t.jpg" /></li>
-      <li><img src="images/specials-mock/5788363074_36c69156d1_t.jpg" /></li>
-      <li><img src="images/specials-mock/5788363650_9825da11df_t.jpg" /></li>
-      <li><img src="images/specials-mock/5788376414_d2b311ff3d_t.jpg" /></li>
-      <li><img src="images/specials-mock/5788380826_907a29e7a5_t.jpg" /></li>
-    </ul>
     <script src="js/app.js">
+
     </script>
     <script src="http://connect.facebook.net/en_US/all.js#appId=110606245696149&amp;xfbml=1"></script>
     <script src="http://platform.twitter.com/widgets.js"
 	    type="text/javascript"></script> 
-</body>
+  </body>
 </html>
+
+
