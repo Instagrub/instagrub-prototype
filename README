@@ -1,2 +1,7 @@
-Sat Jun 11 11:19:51 PDT 2011
-Sat Jun 11 11:21:22 PDT 2011
+* Installation 
+
+Some of the final steps in the flow need to be run locally. 
+
+python -m SimpleHTTPServer 8001
+
+
