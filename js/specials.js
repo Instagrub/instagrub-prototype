@@ -8,17 +8,17 @@ window.specialsModel = {};
 $('#rlist ul li a').live(
     'click',
     function(e) { 
-	console.log($(this));
+	// console.log($(this));
 	var yelpid = $(this).attr('data-yelpid');
 	getSpecials('flyingfishseattle');
-	alert('getting ' + yelpid);
+	// alert('getting ' + yelpid);
     }
 );
 
 
 // Populate the specials list 
 function jsonFlickrApi(response) {
-    console.log('updating slist');
+    // console.log('updating slist');
     var specials = response.photos.photo;
 
     // Clear out the page after the user has selected a new business 
