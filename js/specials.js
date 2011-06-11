@@ -10,7 +10,7 @@ $('#rlist ul li a').live(
     function(e) { 
 	// console.log($(this));
 	var yelpid = $(this).attr('data-yelpid');
-	getSpecials('flyingfishseattle');
+	getSpecials(yelpid);
 	// alert('getting ' + yelpid);
     }
 );
@@ -29,7 +29,13 @@ function jsonFlickrApi(response) {
 	var photo = 'http://farm' + special.farm + '.static.flickr.com/' + special.server + '/' + special.id + '_' + special.secret + '_s.jpg';
 	html += '<li><a href="#order"><img src="' + photo + '"/>' + special.title + '</a></li>'
     }
-    $('#slist').html(html);
+
+    $('#slist').html(
+	'<ul data-role="listview">' + 
+	    html + 
+	    '</ul>'
+    );
+    $('#slist').page();
 };
 
 
