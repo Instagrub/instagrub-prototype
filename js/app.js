@@ -59,12 +59,14 @@
     }
 	
 	function getYelpResults(data, textStats, XMLHttpRequest) {
-		
+
+	    var html = '';
 		for (var i=0; i < data.businesses.length; i++)
 		{
-			$("#rlist ul").append('<li><a data-yelpid="' + data.businesses[i].id + '" href="#specials">' + data.businesses[i].name + '</a></li>');			
+		    html += '<li><a data-yelpid="' + data.businesses[i].id + '" href="#specials">' + data.businesses[i].name + '</a></li>';
 		}
-		$.getScript('http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js');
+	    $('#rlist').html('<ul data-role="listview">' + html + '</ul>')
+	    $('#rlist').page();
 	}
 		  
 	(function () {
