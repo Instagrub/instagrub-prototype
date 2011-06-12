@@ -27,7 +27,8 @@ function jsonFlickrApi(response) {
     for (var s in specials) { 
 	var special = specials[s];
 	var photo = 'http://farm' + special.farm + '.static.flickr.com/' + special.server + '/' + special.id + '_' + special.secret + '_s.jpg';
-	html += '<li><a href="#order"><img src="' + photo + '"/>' + special.title + '</a></li>'
+	html += '<li><a href="#order"><img src="' + photo + '"/>' + special.title + '</a></li>';
+	console.log('http://www.flickr.com/photos/jwalsh_/' + special.id);
     }
 
     $('#slist').html(
@@ -41,9 +42,7 @@ function jsonFlickrApi(response) {
 
 function getSpecials(yelpid) { 
 
-    console.log('Specials list for ' + yelpid);
-
-    var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=171342094218ac7670ac582435dcda9c&user_id=22882695%40N00&tags=yelpid' + yelpid + '&format=json'; 
+    var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=171342094218ac7670ac582435dcda9c&user_id=22882695%40N00&tags=yelpid:' + yelpid + '&format=json'; 
     console.log(url);
 
     $.getJSON(url + '&callback=?');
