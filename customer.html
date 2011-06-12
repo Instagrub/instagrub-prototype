@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Instagrub</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="http://wal.sh/static/home.css" /> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+  </head>
+  <body>
+
+    <div data-role="page" id="restaurants"> 
+      <div data-role="header">
+	<img alt="Instagrub" id="logo" src="images/logo-320.png"/>
+      </div> 
+      <div id="rlist" data-role="content">
+      </div> 
+    </div> 
+
+    <div data-role="page" id="specials"> 
+      <div id="sheader" data-role="header">
+	<h1>Specials</h1>
+      </div> 
+      <div id="slist" data-role="content">
+      </div> 
+    </div> 
+
+    <div data-role="page" id="order"> 
+      <div data-role="header">
+	<h1>Order</h1>
+      </div> 
+      <div data-role="content">
+	<h2 id="order-title"></h2>
+	<img id="order-image" src=""/>
+	<form>
+	  <label for="">Credit Card Type</label>
+	  <input type="text" name="cct" value="Visa"/>
+	  <label for="">Credit Card Number</label>
+	  <input type="text" name="cc" value="4111111111111111"/>
+	  <label for="">Expiration</label>
+	  <input type="text" name="exp" value="01/23"/>
+	  <label for="">Security Code</label>
+	  <input type="text" name="sec" value="555"/>
+	</form>
+	<a href="#order-complete">Place Order</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="order-complete"> 
+      <div data-role="header">
+	<h1>Order Complete</h1>
+      </div> 
+      <div id="lastpage" data-role="content">
+	<h2>Order placed</h2>
+	<img src="http://farm4.static.flickr.com/3489/5787806829_f297833cdd_m.jpg"/>
+
+	<p><a href="">Mark as Favorite</a></p>
+	<p><a href="">Share your order with friends</a></p>
+      </div> 
+    </div> 
+
+    <script type="text/javascript"
+	    src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>    
+    <script type="text/javascript"
+	    src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script> 
+
+    <script type="text/javascript"
+	    src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+    <script type="text/javascript"
+	    src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/specials.js"></script>
+  </body>
+</html>
+
+

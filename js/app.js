@@ -5,10 +5,10 @@
 		  //
 		  // Update with your auth tokens
 		  //
-		  consumerKey: "XPOsR_ibbDff9Ke_sQL8zQ", 
-		  consumerSecret: "Bw6jJGJjkZQmGKXEBJOoNuftGe8",
-		  accessToken: "bchSOd1_KebNwfK70sTqhN3PXhkgVQiB",
-		  accessTokenSecret: "cmeNuNRMtz3doeYFAS-UzllHuvs",
+		    consumerKey: "j46P8qTGoGlPQHOfK2C-FQ",
+		    consumerSecret: "xSyDryEQh4VASwZfnBEb2EUE7Xs",
+		    accessToken: "nGX4__MJDCn2OVFWI9hhJmYeN9xSO7qm",
+		    accessTokenSecret: "zbQLP4Sua8-eFPtc_outiMDCkaE",
 		  serviceProvider: { 
 			signatureMethod: "HMAC-SHA1"
 		  }

@@ -18,10 +18,22 @@ $('#rlist ul li a').live(
     }
 );
 
+// Change the underlying DOM for the special order page
+$('#slist ul li a').live(
+    'click',
+    function(e) { 
+	// console.log($(this));
+	alert('special order requested...');
+	var title = $(this).attr('data-title');
+	var image = $(this).attr('data-image');
+	$('#order-title').html(title);
+	$('#order-image').attr('src', image);
+    }
+);
+
 
 // Populate the specials list 
 function jsonFlickrApi(response) {
-    // console.log('updating slist');
     var specials = response.photos.photo;
 
     // Clear out the page after the user has selected a new business 
@@ -30,8 +42,7 @@ function jsonFlickrApi(response) {
     for (var s in specials) { 
 	var special = specials[s];
 	var photo = 'http://farm' + special.farm + '.static.flickr.com/' + special.server + '/' + special.id + '_' + special.secret + '_m.jpg';
-	html += '<li><a href="#order"><img src="' + photo + '"/>' + special.title + '</a></li>';
-	//	console.log('http://www.flickr.com/photos/jwalsh_/' + special.id);
+	html += '<li><a data-image="' + photo + '" data-title="' + special.title + '" href="#order"><img src="' + photo + '"/>' + special.title + '</a></li>';
     }
 
     $('#slist').html(
