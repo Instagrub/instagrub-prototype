@@ -53,7 +53,7 @@ function getSpecials(yelpid) {
 };
 
 function fixUrl(yelpurl) {    
-     $('#lastpage').append('<iframe id="fbframe" src="http://www.facebook.com/plugins/like.php?href=' + yelpurl + '"></iframe');
+     $('#lastpage').append('<iframe style="border-style: none;" id="fbframe" src="http://www.facebook.com/plugins/like.php?href=' + yelpurl + '"></iframe');
 	 $('#lastpage').page();
 };
 
