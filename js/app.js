@@ -5,10 +5,10 @@
 		  //
 		  // Update with your auth tokens
 		  //
-		  consumerKey: "Srg-JpR1_N4ZQjgG904CwA", 
-		  consumerSecret: "UK4zDt-c2GOKhqHZ0Tu8A-n6bIk",
-		  accessToken: "mKQtr08ZBVLgwoLzTgY2xvSeHYHFd9gK",
-		  accessTokenSecret: "Vwfou_he0DirTEEH872lAy5jXjQ",
+		  consumerKey: "XPOsR_ibbDff9Ke_sQL8zQ", 
+		  consumerSecret: "Bw6jJGJjkZQmGKXEBJOoNuftGe8",
+		  accessToken: "bchSOd1_KebNwfK70sTqhN3PXhkgVQiB",
+		  accessTokenSecret: "cmeNuNRMtz3doeYFAS-UzllHuvs",
 		  serviceProvider: { 
 			signatureMethod: "HMAC-SHA1"
 		  }
@@ -59,20 +59,15 @@
     }
 	
 	function getYelpResults(data, textStats, XMLHttpRequest) {
-		
+
+	    var html = '';
 		for (var i=0; i < data.businesses.length; i++)
 		{
-			$("#rlist ul").append('<li><a href="#specials">' + data.businesses[i].name + '</a></li>');			
+		    html += '<li><a data-yelpid="' + data.businesses[i].id + '" href="#specials">' + data.businesses[i].name + '</a></li>';
 		}
-		$.getScript('http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js');
 
-		$('#order-complete').live('pagecreate',function(event){
-			var str = 
-			'<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=104585362969470&amp;xfbml=1"></script><fb:like href="'
-			+ 'www.google.com' + 
-			'" send="true" width="450" show_faces="true" font=""></fb:like>';
-			$().append();
-		});
+	    $('#rlist').html('<ul data-role="listview">' + html + '</ul>')
+	    $('#rlist').page();
 	}
 		  
 	(function () {

@@ -8,49 +8,28 @@
   </head>
   <body>
 
-    <div data-role="page" id="home"> 
+    <div data-role="page" id="restaurants"> 
       <div data-role="header">
 	<img alt="Instagrub" id="logo" src="images/logo-320.png"/>
       </div> 
       <div id="rlist" data-role="content">
-	  <ul  data-role="listview"> 
-	  </ul>
-      </div> 
-      <div data-role="footer">
       </div> 
     </div> 
 
     <div data-role="page" id="specials"> 
-      <div data-role="header">
-	<h1>Dahlia Workshop Specials</h1>
+      <div id="sheader" data-role="header">
+	<h1>Specials</h1>
       </div> 
-      <div data-role="content">
-	<ul data-role="listview"> 
-	  <li>
-	    <a href="#order">
-	      <img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
-	      Special1
-	    </a>
-	  </li>
-	  <li>
-	    <img src="images/specials-mock/5787838693_fd53226742_t.jpg"/>
-	    Special2
-	  </li>
-	  <li>
-	    <img src="images/specials-mock/5787845813_a88f2bb95c_t.jpg"/>
-	    Special3
-	  </li>
-	</ul>
+      <div id="slist" data-role="content">
       </div> 
     </div> 
 
-
     <div data-role="page" id="order"> 
       <div data-role="header">
-	<h1>Order Special1</h1>
+	<h1>Order</h1>
       </div> 
-      <div  data-role="content">
-	<h2>Special1</h2>
+      <div data-role="content">
+	<h2>Soup and Salad ($7.50)</h2>
 	<img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
 	<form>
 	  <label for="">Credit Card Type</label>
@@ -75,15 +54,23 @@
 	<img src="images/specials-mock/5787832649_4be4f9c40c_t.jpg"/>
 	<p>Mark as Favorite</p>
 	<p>Share with Friends</p>
-      </div> 
+    <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.instagram.com"></iframe>
+	</div> 
     </div> 
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
-	<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
-	<script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+    <script type="text/javascript"
+	    src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>    
+    <script type="text/javascript"
+	    src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script> 
+
+    <script type="text/javascript"
+	    src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+    <script type="text/javascript"
+	    src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
 
     <script src="js/app.js"></script>
-	</body>
+    <script src="js/specials.js"></script>
+  </body>
 </html>
 
 
