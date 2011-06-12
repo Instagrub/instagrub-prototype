@@ -65,6 +65,14 @@
 			$("#rlist ul").append('<li><a href="#specials">' + data.businesses[i].name + '</a></li>');			
 		}
 		$.getScript('http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js');
+
+		$('#order-complete').live('pagecreate',function(event){
+			var str = 
+			'<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=104585362969470&amp;xfbml=1"></script><fb:like href="'
+			+ 'www.google.com' + 
+			'" send="true" width="450" show_faces="true" font=""></fb:like>';
+			$().append();
+		});
 	}
 		  
 	(function () {
