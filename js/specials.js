@@ -44,8 +44,10 @@ function jsonFlickrApi(response) {
 
 
 function getSpecials(yelpid) { 
+    var api_key = '7a8c0dd6263c04eb4ae1a3155b8f80a1';
+    
+    var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + api_key + '&user_id=22882695%40N00&tags=yelpid:' + yelpid + '&format=json'; 
 
-    var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=171342094218ac7670ac582435dcda9c&user_id=22882695%40N00&tags=yelpid:' + yelpid + '&format=json'; 
     console.log(url);
 
     $.getJSON(url + '&callback=?');
