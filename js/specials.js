@@ -29,9 +29,9 @@ function jsonFlickrApi(response) {
 
     for (var s in specials) { 
 	var special = specials[s];
-	var photo = 'http://farm' + special.farm + '.static.flickr.com/' + special.server + '/' + special.id + '_' + special.secret + '_s.jpg';
+	var photo = 'http://farm' + special.farm + '.static.flickr.com/' + special.server + '/' + special.id + '_' + special.secret + '_m.jpg';
 	html += '<li><a href="#order"><img src="' + photo + '"/>' + special.title + '</a></li>';
-	console.log('http://www.flickr.com/photos/jwalsh_/' + special.id);
+	//	console.log('http://www.flickr.com/photos/jwalsh_/' + special.id);
     }
 
     $('#slist').html(
