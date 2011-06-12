@@ -63,7 +63,7 @@
 	    var html = '';
 		for (var i=0; i < data.businesses.length; i++)
 		{
-		    html += '<li><a data-yelpid="' + data.businesses[i].id + '" href="#specials">' + data.businesses[i].name + '</a></li>';
+		    html += '<li><a data-yelpid="' + data.businesses[i].id + '" data-yelpurl="' + data.businesses[i].url + '" href="#specials">' + data.businesses[i].name + '</a></li>';
 		}
 
 	    $('#rlist').html('<ul data-role="listview">' + html + '</ul>')

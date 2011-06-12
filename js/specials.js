@@ -11,6 +11,9 @@ $('#rlist ul li a').live(
 	// console.log($(this));
 	var yelpid = $(this).attr('data-yelpid');
 	getSpecials(yelpid);
+	
+	var yelpurl = $(this).attr('data-yelpurl');
+	fixUrl(yelpurl);
 	// alert('getting ' + yelpid);
     }
 );
@@ -47,5 +50,10 @@ function getSpecials(yelpid) {
 
     $.getJSON(url + '&callback=?');
 
+};
+
+function fixUrl(yelpurl) {    
+     $('#lastpage').append('<iframe id="fbframe" src="http://www.facebook.com/plugins/like.php?href=' + yelpurl + '"></iframe');
+	 $('#lastpage').page();
 };
 
